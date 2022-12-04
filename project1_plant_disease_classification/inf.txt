@@ -1,1 +1,17 @@
-project 설명
+프로젝트 설명
+
+프로젝트 : 이미지 분류 모델(CNN)을 만들어 잎 사진을 보고 질병 유무를 분류하는 프로젝트
+
+데이터 제공 : https://data.mendeley.com/datasets/tywbtsjrjv/1
+
+data_split.ipynb : 제공받은 데이터를 Train, Validation, Test 데이터로 나누고 각 클래스에 해당하는 폴더에 저장한다. 실행후 split폴더에 생성됨
+
+CNN 모델 구조
+Convolution Layer : convolution 연산 3->16->32->64
+                    relu 함수
+pooling Layer : (2,2)Maxpool, droupout 적용
+Fully connected Layer : log_softmax 함수
+
+결과 (Epoch 20, batch_size 256)
+train Loss: 0.2538, Accuracy: 92.04%
+val Loss: 0.3517, Accuracy: 88.53%

@@ -15,3 +15,5 @@ Fully connected Layer : log_softmax 함수
 결과 (Epoch 20, batch_size 256)
 train Loss: 0.2538, Accuracy: 92.04%
 val Loss: 0.3517, Accuracy: 88.53%
+
+baseline.pt_accuracy_test.ipynb 파일을 통해 test폴더의 이미지들로 최종 학습 결과 확인 가능
